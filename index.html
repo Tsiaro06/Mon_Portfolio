@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Lantofanambinana Tsiaro</title>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="bg-pattern"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">LANTOFANAMBINANA Tsiaro</div>
+            <div class="nav-links">
+                <a href="#home" class="active">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="about fade-in">
+            <div class="about-image">
+                <img src="Tsiaro (2).jpg" alt="About Me">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>My name is <span class="name-text">LANTOFANAMBINANA Tsiaro</span>, I am 19 years old and currently studying Computer Science at the <span class="school-name">National School of Informatics</span>. Passionate about digital technologies, I have a strong interest in web development, programming, and user interface design. My ambition is to create innovative and efficient web solutions while continuously improving my skills to build a strong professional career in the field of computer science.</p>
+                <p>I enjoy working on projects that challenge me to learn new technologies, and I'm constantly exploring better ways to create customizable and sustainable software solutions. The following are tech stacks that I use regularly to build amazing products.</p>
+                
+                <div class="tech-stack">
+                    <div class="tech-stack-icon" title="HTML"><i class="fa-brands fa-html5"></i></div>
+                    <div class="tech-stack-icon" title="CSS"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="tech-stack-icon" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                    <div class="tech-stack-icon" title="PHP"><i class="fa-brands fa-php"></i></div>
+                    <div class="tech-stack-icon" title="MySQL"><i class="fa-solid fa-database"></i></div>
+                    <div class="tech-stack-icon" title="PostgreSQL"><i class="fa-solid fa-database"></i></div>
+                    <div class="tech-stack-icon" title="Vue.js"><i class="fa-brands fa-vuejs"></i></div>
+                    <div class="tech-stack-icon" title="GitHub"><i class="fa-brands fa-github"></i></div>
+                    <div class="tech-stack-icon" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+                </div>
+                
+                <a href="#" class="btn btn-primary">Download Resume</a>
+            </div>
+        </section>
+
+        <!-- Hero Section with Tech System -->
+        <section class="hero fade-in" id="home">
+            <div class="hero-content">
+                <h1>Frontend & Backend Developer.</h1>
+                <p>I specialize in crafting immersive user experiences using the latest frontend technologies and frameworks to bring your ideas to life. From dynamic user interfaces to interactive geospatial solutions, where I find joy in harnessing the power of technology to solve and improve business insights.</p>
+
+                <!-- Controls -->
+                <div class="controls">
+                    <button class="control-btn" onclick="toggleAnimation()">⏯️ Pause</button>
+                    <button class="control-btn" onclick="changeSpeed()">⚡ Speed</button>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#" class="btn btn-secondary">Available Hire</a>
+                </div>
+            </div>
+            
+            <div class="tech-system">
+                <div class="core">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <!-- HTML -->
+                <div class="orbit html-orbit">
+                    <div class="tech-icon html-icon" data-tech="html">
+                        <i class="fab fa-html5"></i>
+                        <div class="tech-label">HTML5</div>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="orbit css-orbit">
+                    <div class="tech-icon css-icon" data-tech="css">
+                        <i class="fab fa-css3-alt"></i>
+                        <div class="tech-label">CSS3</div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="orbit js-orbit">
+                    <div class="tech-icon js-icon" data-tech="js">
+                        <i class="fab fa-js"></i>
+                        <div class="tech-label">JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- PHP -->
+                <div class="orbit php-orbit">
+                    <div class="tech-icon php-icon" data-tech="php">
+                        <i class="fab fa-php"></i>
+                        <div class="tech-label">PHP</div>
+                    </div>
+                </div>
+
+                <!-- Vue.js -->
+                <div class="orbit vue-orbit">
+                    <div class="tech-icon vue-icon" data-tech="vue">
+                        <i class="fab fa-vuejs"></i>
+                        <div class="tech-label">Vue.js</div>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="orbit mysql-orbit">
+                    <div class="tech-icon mysql-icon" data-tech="mysql">
+                        <i class="fas fa-database"></i>
+                        <div class="tech-label">MySQL</div>
+                    </div>
+                </div>
+
+                <!-- PostgreSQL -->
+                <div class="orbit pgsql-orbit">
+                    <div class="tech-icon pgsql-icon" data-tech="pgsql">
+                        <i class="fas fa-database"></i>
+                        <div class="tech-label">PostgreSQL</div>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="orbit git-orbit">
+                    <div class="tech-icon git-icon" data-tech="git">
+                        <i class="fab fa-git-alt"></i>
+                        <div class="tech-label">Git</div>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="orbit github-orbit">
+                    <div class="tech-icon github-icon" data-tech="github">
+                        <i class="fab fa-github"></i>
+                        <div class="tech-label">GitHub</div>
+                    </div>
+                </div>
+
+                <!-- Info Panel -->
+                <div class="info-panel" id="infoPanel">
+                    <h3 id="techName">Technologies</h3>
+                    <p id="techInfo">Click on a technology to learn more about its use in my projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects fade-in" id="projects">
+            <h2>Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="gis">Geo Informatics</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-icon">🌐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Onari B Website</h3>
+                        <p class="project-description">Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-demo">View Live Demo</a>
+                            <a href="#" class="link-code">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="gis">
+                    <div class="project-image">
+                        <div class="project-icon">🐦</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Google Earth Tweet Map</h3>
+                        <p class="project-description">Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">GIS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-demo">View Live Demo</a>
+                            <a href="#" class="link-code">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="gis">
+                    <div class="project-image">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ArcGIS StoryMaps</h3>
+                        <p class="project-description">Methods in Spatial Analysis. Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ArcGIS</span>
+                            <span class="tech-tag">Analysis</span>
+                            <span class="tech-tag">Story</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-demo">View Live Demo</a>
+                            <a href="#" class="link-code">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn btn-primary">View All Projects</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact fade-in" id="contact">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss on something <span style="color: #34d399; font-weight: bold;">cool</span> together</p>
+                <p>I'm interested in freelance opportunities – especially ambitious or large projects. However, if you have other requests or questions, don't hesitate to contact me using the form.</p>
+            </div>
+            <div class="contact-form">
+                <div>
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link">📧</a>
+            <a href="#" class="social-link">💼</a>
+            <a href="#" class="social-link">🐦</a>
+            <a href="#" class="social-link">📷</a>
+        </div>
+        <p>© 2024 Nomad. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Basic script for tech system controls
+        let isPaused = false;
+        let speed = 1;
+
+        function toggleAnimation() {
+            isPaused = !isPaused;
+            document.querySelectorAll('.orbit').forEach(orbit => {
+                orbit.style.animationPlayState = isPaused ? 'paused' : 'running';
+            });
+            document.querySelector('.control-btn:first-child').textContent = isPaused ? '▶️ Play' : '⏯️ Pause';
+        }
+
+        function changeSpeed() {
+            speed = speed === 1 ? 0.5 : 1;
+            document.querySelectorAll('.orbit').forEach(orbit => {
+                const baseDuration = parseFloat(orbit.style.animationDuration) || 0;
+                orbit.style.animationDuration = (baseDuration * speed) + 's';
+            });
+            document.querySelector('.control-btn:last-child').textContent = speed === 1 ? '⚡ Speed' : '🐢 Speed';
+        }
+
+        // Tech info panel interaction
+        const techInfo = {
+            html: "I use HTML5 to structure my web projects with semantic and accessible markup.",
+            css: "CSS3 allows me to create visually appealing designs with animations and responsive layouts.",
+            js: "JavaScript powers the interactivity in my projects, from dynamic content to API integrations.",
+            php: "PHP is my go-to for server-side development, handling backend logic and database interactions.",
+            vue: "Vue.js helps me build reactive and component-based frontend applications efficiently.",
+            mysql: "MySQL is used for managing relational databases in my web applications.",
+            pgsql: "PostgreSQL is utilized for robust geospatial and relational database management.",
+            git: "Git enables version control, allowing me to track changes and collaborate effectively.",
+            github: "GitHub hosts my projects, facilitating collaboration and showcasing my work."
+        };
+
+        document.querySelectorAll('.tech-icon').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const tech = icon.dataset.tech;
+                document.getElementById('techName').textContent = tech.charAt(0).toUpperCase() + tech.slice(1);
+                document.getElementById('techInfo').textContent = techInfo[tech] || "Details coming soon!";
+            });
+        });
+
+        // Star background effect
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = star.style.height = Math.random() * 3 + 'px';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        createStars();
+    </script>
+</body>
+</html>
