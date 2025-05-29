@@ -89,7 +89,7 @@ body {
     padding: 100px 2rem 2rem;
 }
 
-/* Hero Section with Tech System */
+/*Hero Section with Tech System */
 .hero {
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ body {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #34 barriers, #10b981);
+    background: linear-gradient(45deg, #34d399, #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -154,8 +154,8 @@ body {
 /* Tech System */
 .tech-system {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,11 +187,14 @@ body {
     border: 1px solid rgba(52, 211, 153, 0.2);
     border-radius: 50%;
     animation: rotate linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .tech-icon {
@@ -206,10 +209,13 @@ body {
     background: rgba(15, 20, 25, 0.9);
     border: 2px solid;
     box-shadow: 0 0 15px;
+    /* Position sur l'orbite */
+    top: 50%;
+    left: 50%;
 }
 
 .tech-icon:hover {
-    transform: scale(1.4);
+    transform: translate(-50%, -50%) scale(1.4);
     z-index: 200;
 }
 
@@ -225,7 +231,7 @@ body {
     color: white;
 }
 
-/* Tech Icon Specific Styles */
+/* Tech Icon Specific Styles - POSITIONING CORRIGÉ */
 .html-orbit {
     width: 120px;
     height: 120px;
@@ -235,11 +241,10 @@ body {
 .html-icon {
     width: 35px;
     height: 35px;
-    top: -17.5px;
-    right: -17.5px;
     color: #E34F26;
     border-color: #E34F26;
     box-shadow: 0 0 15px rgba(227, 79, 38, 0.5);
+    transform: translate(-50%, -50%) rotate(0deg) translateX(60px) rotate(0deg);
 }
 
 .css-orbit {
@@ -251,11 +256,10 @@ body {
 .css-icon {
     width: 35px;
     height: 35px;
-    top: -17.5px;
-    right: -17.5px;
     color: #1572B6;
     border-color: #1572B6;
     box-shadow: 0 0 15px rgba(21, 114, 182, 0.5);
+    transform: translate(-50%, -50%) rotate(45deg) translateX(80px) rotate(-45deg);
 }
 
 .js-orbit {
@@ -267,12 +271,11 @@ body {
 .js-icon {
     width: 40px;
     height: 40px;
-    top: -20px;
-    right: -20px;
     color: #F7DF1E;
     border-color: #F7DF1E;
     box-shadow: 0 0 15px rgba(247, 223, 30, 0.5);
     background: rgba(15, 20, 25, 0.95);
+    transform: translate(-50%, -50%) rotate(90deg) translateX(100px) rotate(-90deg);
 }
 
 .php-orbit {
@@ -284,11 +287,10 @@ body {
 .php-icon {
     width: 35px;
     height: 35px;
-    top: -17.5px;
-    right: -17.5px;
     color: #777BB4;
     border-color: #777BB4;
     box-shadow: 0 0 15px rgba(119, 123, 180, 0.5);
+    transform: translate(-50%, -50%) rotate(135deg) translateX(120px) rotate(-135deg);
 }
 
 .vue-orbit {
@@ -300,11 +302,10 @@ body {
 .vue-icon {
     width: 40px;
     height: 40px;
-    top: -20px;
-    right: -20px;
     color: #4FC08D;
     border-color: #4FC08D;
     box-shadow: 0 0 15px rgba(79, 192, 141, 0.5);
+    transform: translate(-50%, -50%) rotate(180deg) translateX(140px) rotate(-180deg);
 }
 
 .mysql-orbit {
@@ -316,43 +317,96 @@ body {
 .mysql-icon {
     width: 35px;
     height: 35px;
-    top: -17.5px;
-    right: -17.5px;
     color: #00758F;
     border-color: #00758F;
     box-shadow: 0 0 15px rgba(0, 117, 143, 0.5);
+    transform: translate(-50%, -50%) rotate(225deg) translateX(160px) rotate(-225deg);
 }
 
-.git-orbit {
+.pgsql-orbit {
     width: 360px;
     height: 360px;
     animation-duration: 32s;
 }
 
-.git-icon {
+.pgsql-icon {
     width: 35px;
     height: 35px;
-    top: -17.5px;
-    right: -17.5px;
-    color: #F05032;
-    border-color: #F05032;
-    box-shadow: 0 0 15px rgba(240, 80, 50, 0.5);
+    color: #336791;
+    border-color: #336791;
+    box-shadow: 0 0 15px rgba(51, 103, 145, 0.5);
+    transform: translate(-50%, -50%) rotate(270deg) translateX(180px) rotate(-270deg);
 }
 
-.github-orbit {
+.git-orbit {
     width: 400px;
     height: 400px;
     animation-duration: 36s;
 }
 
+.git-icon {
+    width: 35px;
+    height: 35px;
+    color: #F05032;
+    border-color: #F05032;
+    box-shadow: 0 0 15px rgba(240, 80, 50, 0.5);
+    transform: translate(-50%, -50%) rotate(315deg) translateX(200px) rotate(-315deg);
+}
+
+.github-orbit {
+    width: 440px;
+    height: 440px;
+    animation-duration: 40s;
+}
+
 .github-icon {
     width: 35px;
     height: 35px;
-    top: -17.5px;
-    right: -17.5px;
     color: #ffffff;
     border-color: #ffffff;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%) rotate(360deg) translateX(220px) rotate(-360deg);
+}
+
+/* Override for tech-icon hover to maintain correct positioning */
+.tech-icon:hover {
+    z-index: 200;
+}
+
+.html-icon:hover {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(60px) rotate(0deg) scale(1.4);
+}
+
+.css-icon:hover {
+    transform: translate(-50%, -50%) rotate(45deg) translateX(80px) rotate(-45deg) scale(1.4);
+}
+
+.js-icon:hover {
+    transform: translate(-50%, -50%) rotate(90deg) translateX(100px) rotate(-90deg) scale(1.4);
+}
+
+.php-icon:hover {
+    transform: translate(-50%, -50%) rotate(135deg) translateX(120px) rotate(-135deg) scale(1.4);
+}
+
+.vue-icon:hover {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(140px) rotate(-180deg) scale(1.4);
+}
+
+.mysql-icon:hover {
+    transform: translate(-50%, -50%) rotate(225deg) translateX(160px) rotate(-225deg) scale(1.4);
+}
+
+.pgsql-icon:hover {
+    transform: translate(-50%, -50%) rotate(270deg) translateX(180px) rotate(-270deg) scale(1.4);
+}
+
+.git-icon:hover {
+    transform: translate(-50%, -50%) rotate(315deg) translateX(200px) rotate(-315deg) scale(1.4);
+}
+
+.github-icon:hover {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(220px) rotate(-360deg) scale(1.4);
 }
 
 /* Info Panel */
@@ -420,7 +474,7 @@ body {
 }
 
 .name-text {
-    color: #00f7ff; /* Vibrant cyan for name */
+    color: #00f7ff;
     font-weight: bold;
     display: inline-block;
     opacity: 0;
@@ -436,7 +490,7 @@ body {
 }
 
 .school-name {
-    color: #00f7ff; /* Vibrant cyan for school name */
+    color: #00f7ff;
     font-weight: bold;
     display: inline-block;
     animation: pulse 2s ease-in-out infinite;
@@ -674,6 +728,9 @@ body {
     border-radius: 10px;
     color: white;
     font-family: inherit;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+    gap: 0.5rem;
 }
 
 .form-group input:focus,
@@ -753,33 +810,35 @@ body {
 }
 
 /* Responsive */
-@media (max documents, .about, .contact {
-    grid-template-columns: 1fr;
-    text-align: center;
-}
+@media (max-width: 768px) {
+    .hero, .about, .contact {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 
-.tech-system {
-    width: 400px;
-    height: 400px;
-    margin: 2rem auto;
-}
+    .tech-system {
+        width: 400px;
+        height: 400px;
+        margin: 2rem auto;
+    }
 
-.info-panel {
-    position: static;
-    margin: 2rem 0;
-    max-width: 100%;
-}
+    .info-panel {
+        position: static;
+        margin: 2rem 0;
+        max-width: 100%;
+    }
 
-.nav-links {
-    display: none;
-}
+    .nav-links {
+        display: none;
+    }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-}
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 
-.projects-grid {
-    grid-template-columns: 1fr;
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Animations */
